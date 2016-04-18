@@ -19,7 +19,7 @@
 #endif
 
 unsigned int mapSize;
-GLfloat colors[1024][3];
+GLfloat colors[2048][3];
 CIEDE2000::LAB lab1, lab2;
 float fLab1[3],fLab2[3];
 float fRGB1[3],fRGB2[3];
@@ -127,7 +127,7 @@ void readFile(){
     std::ifstream infile("Colors.txt");
     int r,g,b;
     mapSize=0;
-    for(mapSize=0;mapSize<1024&&infile >> r >> g >> b;mapSize++){
+    for(mapSize=0;mapSize<2048&&infile >> r >> g >> b;mapSize++){
         colors[mapSize][0]=1.0*r/255;
         colors[mapSize][1]=1.0*g/255;
         colors[mapSize][2]=1.0*b/255;
@@ -208,17 +208,24 @@ void drawColorInfo(){
         hold = "";
         strs.str("");
         strs.clear();
-        index=getColorIndex((int)topPoints[i]);
+        index=getColorIndex((int)topPoints[i+1]);
         strs << roundf(colors[index][0]*255)<<" "<<roundf(colors[index][1]*255)<<" "<<roundf(colors[index][2]*255);
         str = hold+strs.str();
         text_Output(str.c_str(), i, 23,47);
 
-        hold = "Distance: ";
+        hold = "CIEDE2000: ";
         strs.str("");
         strs.clear();
         strs << colorComparison(getColorIndex((int)topPoints[i]),getColorIndex((int)topPoints[i+1]));
         str = hold+strs.str();
         text_Output(str.c_str(), i, 33);
+
+        hold = "Distance: ";
+        strs.str("");
+        strs.clear();
+        strs << getColorIndex((int)topPoints[i+1])-getColorIndex((int)topPoints[i]);
+        str = hold+strs.str();
+        text_Output(str.c_str(), i, 43);
     }
 }
 
