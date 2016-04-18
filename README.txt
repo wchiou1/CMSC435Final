@@ -8,3 +8,6 @@ The program can contain up to 2048 different colors which will be displayed in t
 
 Tested in Code Blocks using GNU GCC Compiler, following C++11 ISO language standard
 Requires Opengl32, glu32, glut32 libraries
+
+CIEDE2000 Implementation Source:
+https://github.com/gfiumara/CIEDE2000
