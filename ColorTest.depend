@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1460576250 source:c:\users\wesley\ciede2000\colortest\ciede2000.cpp
+	<cmath>
+	<CIEDE2000.h>
+
+1459194995 c:\users\wesley\ciede2000\colortest\\ciede2000.h
+	<ostream>
+
+1460936997 source:c:\users\wesley\ciede2000\colortest\testciede2000.cpp
+	<iostream>
+	<string>
+	<vector>
+	<stdio.h>
+	<CIEDE2000.h>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<string>
+	<sstream>
+
+1462335654 source:c:\users\wesley\ciede2000\colortest\exampletest.cpp
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<math.h>
+	<iostream>
+	<string>
+	<vector>
+	<CIEDE2000.h>
+	<string>
+	<sstream>
+	<cstring>
+	<ColorConverter.h>
+	<fstream>
+	<GLUT/glut.h>
+	<GL/glut.h>
+
+1460947950 c:\users\wesley\ciede2000\colortest\\colorconverter.h
+	<math.h>
+	<iostream>
+

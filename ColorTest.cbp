@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ColorTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ColorTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="C:/Users/Wesley/CIEDE2000/ColorTest/" />
+				</Compiler>
+				<Linker>
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="glut32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ColorTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Blue.txt" />
+		<Unit filename="CIEDE2000.cpp" />
+		<Unit filename="CIEDE2000.h" />
+		<Unit filename="ColorConverter.h" />
+		<Unit filename="Colors.txt" />
+		<Unit filename="Green.txt" />
+		<Unit filename="GreenBlue.txt" />
+		<Unit filename="OrangeBlue.txt" />
+		<Unit filename="Rainbow.txt" />
+		<Unit filename="RainbowSeparate.txt" />
+		<Unit filename="Red.txt" />
+		<Unit filename="RedBlue.txt" />
+		<Unit filename="RedGreen.txt" />
+		<Unit filename="Separate.txt" />
+		<Unit filename="WhiteBlue.txt" />
+		<Unit filename="WhiteRed.txt" />
+		<Unit filename="YellowPurple.txt" />
+		<Unit filename="exampleTest.cpp" />
+		<Unit filename="gray.txt" />
+		<Unit filename="testCIEDE2000.cpp" />
+		<Unit filename="whitegreen.txt" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
